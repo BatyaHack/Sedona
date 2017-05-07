@@ -1,0 +1,40 @@
+.logo{
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-right: 20px;
+
+}
+
+.burger{
+  width: 23px;
+  height: 20px;
+
+  padding: 0;
+  margin: 0;
+
+  border: none;
+  background: none;
+  box-shadow: inset 0px 21px 0px -17px rgba(129,179,210,1),
+              inset 0px -21px 0px -17px rgba(129,179,210,1);
+
+  &:after{
+    content: "";
+    display: block;
+    position: absolute;
+
+    width: 23px;
+    height: 4px;
+    margin-top: -2px;
+
+    background-color: $secondary_background_color;
+  }
+}
+
+.logo__img{
+  position: absolute;
+  top: 204px;
+  left: 50%;
+  transform: translateX(-50%);
+}

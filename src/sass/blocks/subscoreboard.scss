@@ -1,0 +1,49 @@
+.subscoreboard{
+  padding-top: 83px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  font: $primary_font;
+
+  background: $secondary_background_color url("/img/scoreboard_background.png") no-repeat center top;
+}
+
+.subscoreboard_bg_none{
+  padding-top: 43px;
+  background: $secondary_background_color;
+}
+
+.subscoreboard__title{
+  padding-bottom: 20px;
+
+  color: $secondary_text_color;
+  font-size: 21px;
+  text-transform: uppercase;
+}
+
+.subscoreboard__number{
+  padding-bottom: 20px;
+
+  color: $secondary_text_color;
+
+  &:after, &:before{
+    content: "-";
+    position: absolute;
+     color: $secondary_text_color;
+  }
+  &:before{
+    margin-left: -6px;
+  }
+}
+
+.subscoreboard__information{
+  padding-top: 20px;
+  padding-bottom: 45px;
+  text-transform: uppercase;
+
+  color: $secondary_text_color;
+}
+
+.subscoreboard__img{
+  margin-left: -20px;
+}

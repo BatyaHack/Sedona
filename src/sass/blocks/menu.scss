@@ -1,0 +1,35 @@
+.menu{
+
+}
+
+.menu__link{
+  display: block;
+  padding: 15px 0 15px;
+
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+
+  background-color: $secondary_background_color;
+  box-shadow: inset 0px -1px 0px 0px rgba(103,143,168,1),
+              inset 0px -2px 0px 0px rgba(154,194,219,1);
+
+  &:hover:not(&_active){
+    background-color: #669ec0;
+    box-shadow: inset 0px -1px 0px 0px rgba(103,143,168,1);
+  }
+
+  &:active:not(&_active){
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5496bd;
+    box-shadow: inset 0px -1px 0px 0px rgba(103,143,168,1);
+    @include epileptic;
+  }
+
+  &:last-child{
+    box-shadow: inset 0px -6px 9px -4px rgba(0,0,0,0.5);
+  }
+}

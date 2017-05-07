@@ -1,0 +1,164 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("PT Sans"), local("PTSans-Regular"), url("../fonts/ptsans.woff") format("woff"), url("../fonts/ptsans.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("PT Sans Bold"), local("PTSans-Bold"), url("../fonts/ptsansbold.woff") format("woff"), url("../fonts/ptsansbold.woff2") format("woff2"); }
+
+.page {
+  min-width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000; }
+
+a {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  color: #000000; }
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0; }
+
+.visually-hidden {
+  display: none; }
+
+@keyframes epileptic_btn {
+  0% {
+    background-color: #5496bd; }
+  100% {
+    background-color: #3e84ae; } }
+
+.logo {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-right: 20px; }
+
+.burger {
+  width: 23px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  box-shadow: inset 0px 21px 0px -17px #81b3d2, inset 0px -21px 0px -17px #81b3d2; }
+  .burger:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 23px;
+    height: 4px;
+    margin-top: -2px;
+    background-color: #81b3d2; }
+
+.logo__img {
+  position: absolute;
+  top: 204px;
+  left: 50%;
+  transform: translateX(-50%); }
+
+.main-title {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  background: url("/img/intro_triangle_background.png"), url("/img/intro_background_mobile.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover; }
+
+.menu__link {
+  display: block;
+  padding: 15px 0 15px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  background-color: #81b3d2;
+  box-shadow: inset 0px -1px 0px 0px #678fa8, inset 0px -2px 0px 0px #9ac2db; }
+  .menu__link:hover:not(.menu__link_active) {
+    background-color: #669ec0;
+    box-shadow: inset 0px -1px 0px 0px #678fa8; }
+  .menu__link:active:not(.menu__link_active) {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5496bd;
+    box-shadow: inset 0px -1px 0px 0px #678fa8;
+    animation-name: epileptic_btn;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite; }
+  .menu__link:last-child {
+    box-shadow: inset 0px -6px 9px -4px rgba(0, 0, 0, 0.5); }
+
+.page__main-title {
+  padding-top: 80px;
+  padding-bottom: 80px; }
+
+.scoreboard {
+  padding-top: 45px;
+  padding-left: 37px;
+  padding-right: 37px;
+  text-align: center; }
+
+.scoreboard__title {
+  padding-bottom: 40px;
+  font: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 18px; }
+
+.scoreboard__information {
+  color: #333333;
+  font: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px; }
+
+.subscoreboard {
+  padding-top: 83px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  font: "PT Sans", "Arial", sans-serif;
+  background: #81b3d2 url("/img/scoreboard_background.png") no-repeat center top; }
+
+.subscoreboard_bg_none {
+  padding-top: 43px;
+  background: #81b3d2; }
+
+.subscoreboard__title {
+  padding-bottom: 20px;
+  color: #ffffff;
+  font-size: 21px;
+  text-transform: uppercase; }
+
+.subscoreboard__number {
+  padding-bottom: 20px;
+  color: #ffffff; }
+  .subscoreboard__number:after, .subscoreboard__number:before {
+    content: "-";
+    position: absolute;
+    color: #ffffff; }
+  .subscoreboard__number:before {
+    margin-left: -6px; }
+
+.subscoreboard__information {
+  padding-top: 20px;
+  padding-bottom: 45px;
+  text-transform: uppercase;
+  color: #ffffff; }
+
+.subscoreboard__img {
+  margin-left: -20px; }
