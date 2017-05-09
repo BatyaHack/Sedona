@@ -3,7 +3,7 @@
   flex-direction: column;
 
   padding-top: 40px;
-  padding-left: 70px;
+  padding-left: 20%;
 
   &:last-child{ //ойоййо ойоййойо ойоййойо какая же параша!!!!
     padding-bottom: 42px;
@@ -12,7 +12,6 @@
 
 .blurb__subtitle{
   padding-bottom: 25px;
-
   font-weight: 700;
   font-size: 21px;
   text-transform: uppercase;
@@ -20,14 +19,15 @@
   &:before{
     content: "";
 
+    display: inline-block;
     position: absolute;
-    width: 39px;
+    width: 38px;
     height: 38px;
-    left: 22px;
     margin-top: -12px;
+    left: 15px;
 
 
-    background: url("/img/icons/icon_blurb.png") no-repeat left bottom;
+    background: url("../img/icons/icon_blurb.png") no-repeat left bottom;
   }
 }
 
@@ -39,7 +39,6 @@
 
 .blurb__subtitle_burger{
   &:before{
-    left: 20px;
     background-position: -84px;
   }
 }

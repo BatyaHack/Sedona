@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+
+<body class="page">
+
+  <nav class="menu">
+    <a class="menu__link menu__link_active">Главная</a>
+    <a class="menu__link" href="photo.html">Фото и видео</a>
+    <a class="menu__link" href="form.html">форма отзыва</a>
+    <a class="menu__link" href="#">HTML ACADEMY</a>
+  </nav>
+
+  <div class="page__line">
+    <div class="logo">
+      <img class="logo__img" src="img/logo.png" alt="logo">
+      <button class="burger" type="button" name="button"></button>
+    </div>
+  </div>
+
+  <h1 class="second-title">
+    <img class="second-title__img" src="img/photo_sedona.png" alt="Фон_заголовка">
+    <span class="second-title__img visually-hidden">sedona<span>
+  </h1>
+
+  <div class="page-information  page-information_size-offest_small">
+    <h2 class="page-information__title">Оставьте свой отзыв</h2>
+    <p class="page-information__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+  </div>
+
+  <div class="person">
+
+    <h3 class="person__title">Представьтесь, пожалуйста:</h3>
+
+    <div class="info-input  person__info-input">
+      <label class="info-input__title" for="">Имя:</label>
+      <input class="input  info-input__input" type="text">
+    </div>
+
+    <div class="info-input  person__info-input">
+      <label class="info-input__title" for="">Фамилия:</label>
+      <input class="input  info-input__input" type="text">
+    </div>
+
+    <div class="info-input">
+      <label class="info-input__title" for="">Отчество:</label>
+      <input class="input  info-input__input" type="text">
+    </div>
+
+  </div>
+
+  <div class="person">
+    <h3 class="person__title">Контактная информация:</h3>
+    <div class="info-input  info-input_flex_none  person__info-input">
+      <label class="info-input__title  info-input__title_no-flex_wraper" for="">Контактный телефон:</label>
+      <input class="input  input_icon_phone  info-input__input" type="text">
+    </div>
+    <div class="info-input  info-input_flex_none">
+      <label class="info-input__title  info-input__title_no-flex_wraper" for="">Электронная почта:</label>
+      <input class="input  input_icon_mail  info-input__input" type="text">
+    </div>
+  </div>
+
+  <div class="person">
+    <h3 class="person__title">Ваше общее впечатление:</h3>
+    <div class="valuation-wraper">
+      <label class="valuation">
+        <input class="valuation__radio  visually-hidden" type="radio" name="valuation" value="1">
+        <span class="valuation__title">Скорее положительное</span>
+      </label>
+      <label class="valuation">
+        <input class="valuation__radio  visually-hidden" type="radio" name="valuation" value="2">
+        <span class="valuation__title">Скорее отрицательное</span>
+      </label>
+      <label class="valuation">
+        <input class="valuation__radio  visually-hidden" type="radio" name="valuation" value="3">
+        <span class="valuation__title">Затрудняюсь ответить</span>
+      </label>
+    </div>
+  </div>
+
+  <div class="person">
+    <h3 class="person__title">Ваше общее впечатление:</h3>
+    <div class="valuation-wraper">
+      <label class="valuation">
+        <input class="valuation__radio  visually-hidden" type="checkbox" name="valuation" value="1">
+        <span class="valuation__title_checkbox">Скорее положительное</span>
+      </label>
+      <label class="valuation">
+        <input class="valuation__radio  visually-hidden" type="checkbox" name="valuation" value="2">
+        <span class="valuation__title_checkbox">Скорее отрицательное</span>
+      </label>
+      <label class="valuation">
+        <input class="valuation__radio  visually-hidden" type="checkbox" name="valuation" value="3">
+        <span class="valuation__title_checkbox">Затрудняюсь ответить</span>
+      </label>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

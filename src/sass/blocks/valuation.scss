@@ -1,0 +1,63 @@
+.valuation-wraper {
+  text-align: left;
+}
+
+.valuation {
+  display: block;
+  padding: 25px 0;
+}
+
+.valuation__title_checkbox,
+.valuation__title {
+  position: relative;
+  padding-left: 80px;
+  font-size: 18px;
+  font-weight: 700;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 57px;
+    height: 57px;
+    top: -18px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+  }
+  &::after{
+    content: "";
+    display: none;
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    top: -1px;
+    left: 17px;
+    background: #333333;
+    border-radius: 50%;
+  }
+}
+
+.valuation__title_checkbox{
+  &:before{
+    border-radius: 10px;
+  }
+  &:after{
+    background: url("../img/icons/tick.png") no-repeat center center;
+  }
+}
+
+.valuation__title_checkbox:hover::before,
+.valuation__title:hover::before {
+  background-color: #e5e5e5;
+}
+
+
+.valuation__title_checkbox:active::before,
+.valuation__title:active::before {
+  background-color: #d5d5d5;
+}
+
+.valuation__radio:checked ~ .valuation__title_checkbox::after,
+.valuation__radio:checked ~ .valuation__title::after {
+  display: block;
+}

@@ -1,0 +1,22 @@
+.info-input{
+  display: flex;
+  flex-wrap: nowrap;
+
+  align-items: center;
+}
+
+.info-input__title{
+  padding-right: 20px;
+
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.info-input_flex_none{
+  flex-wrap: wrap;
+}
+
+.info-input__title_no-flex_wraper{
+  padding-left: 20px;
+  padding-bottom: 15px;
+}

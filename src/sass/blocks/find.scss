@@ -1,7 +1,7 @@
 .find{
   padding-top: 33px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 6%;
+  padding-right: 6%;
   padding-bottom: 50px;
   text-align: center;
 }
@@ -21,7 +21,9 @@
 }
 
 .find__btn{
-  padding: 20px 30px 20px;
+  padding: 20px 0;
+  margin: 0 auto;
+  width: 280px;
 
   background-color: $secondary_background_color;
 
@@ -45,6 +47,6 @@
   }
   &:active{
     color: $primary_background_color;
-    background-color: #e5e5e5;    
+    background-color: #e5e5e5;
   }
 }

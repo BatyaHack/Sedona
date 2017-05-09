@@ -5,6 +5,9 @@
 @import "global/animation.scss";
 @import "global/mixins.scss";
 
+@import "blocks/valuation.scss";
+@import "blocks/person.scss";
+@import "blocks/input.scss";
 @import "blocks/blurb.scss";
 @import "blocks/find.scss";
 @import "blocks/footer.scss";
@@ -19,3 +22,4 @@
 @import "blocks/second-title.scss";
 @import "blocks/page-information.scss";
 @import "blocks/photo-news.scss";
+@import "blocks/info-input.scss";

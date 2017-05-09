@@ -27,7 +27,7 @@ a{
   }
   &:active{
     color: #88b6d1;
-    background-color: #5496bd;    
+    background-color: #5496bd;
   }
 }
 
@@ -38,4 +38,28 @@ h1, h2, h3, h4, h5, p{
 
 .visually-hidden{
   display: none;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  opacity: 1;
+  color: $primary_text_color;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  opacity: 1;
+  color: $primary_text_color;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  opacity: 1;
+  color: $primary_text_color;
+}
+
+input:-o-input-placeholder,
+textarea:-o-input-placeholder {
+  opacity: 1;
+  color: $primary_text_color;
 }
