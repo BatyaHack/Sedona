@@ -28,11 +28,11 @@ a {
   line-height: 21px;
   color: #000000; }
 
-.btn {
+.social-icon {
   display: block; }
-  .btn:hover {
+  .social-icon:hover {
     background-color: #669ec0; }
-  .btn:active {
+  .social-icon:active {
     color: #88b6d1;
     background-color: #5496bd; }
 
@@ -68,6 +68,23 @@ textarea:-o-input-placeholder {
     background-color: #5496bd; }
   100% {
     background-color: #3e84ae; } }
+
+.btn {
+  display: block;
+  padding: 20px 0;
+  margin: 0 auto;
+  width: 280px;
+  text-align: center;
+  background-color: #81b3d2;
+  color: #ffffff;
+  font-family: "PT_Sans_Bold", "Arial", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 21px; }
+  .btn:active {
+    animation-name: epileptic_btn;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite; }
 
 .valuation-wraper {
   text-align: left; }
@@ -126,6 +143,10 @@ textarea:-o-input-placeholder {
   padding: 25px 6%;
   text-align: center;
   border-bottom: 1px solid #e5e5e5; }
+
+.person_offset {
+  border-bottom: none;
+  padding-bottom: 50px; }
 
 .person__title {
   padding-bottom: 28px;
@@ -421,6 +442,15 @@ textarea:-o-input-placeholder {
 .subscoreboard__information_size_small {
   padding-top: 23px;
   padding-bottom: 33px; }
+
+.feed-back-textarea {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  height: 160px;
+  border: 4px solid transparent;
+  background-color: #f2f2f2;
+  resize: none; }
 
 .second-title {
   padding-top: 80px;

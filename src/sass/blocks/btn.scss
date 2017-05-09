@@ -1,0 +1,19 @@
+.btn{
+  display: block;
+  padding: 20px 0;
+  margin: 0 auto;
+  width: 280px;
+  text-align: center;
+
+  background-color: $secondary_background_color;
+
+  color: $primary_background_color;
+  font-family: $secondary_font;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 21px;
+
+  &:active{
+    @include epileptic;
+  }
+}
