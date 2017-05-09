@@ -1,0 +1,36 @@
+.photo-news{
+  padding: 23px 20px;
+
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.photo-news__title{
+  padding-top: 22px;
+  padding-bottom: 15px;
+
+  text-transform: uppercase;
+  font: $secondary_font;
+}
+
+.photo-news__author{
+  padding-bottom: 22px;
+
+  color: #333333;
+}
+
+.photo-news__like{
+  padding-left: 38px;
+
+  font-weight: bold;
+
+  &:before{
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    margin-top: -5px;
+    left: 20px;
+
+    background: url("/img/icons/like-icon.png") no-repeat center center;
+  }
+}

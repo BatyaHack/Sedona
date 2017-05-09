@@ -1,0 +1,26 @@
+.page-information{
+  padding-top: 45px;
+  padding-bottom: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.page-information_offset_small{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.page-information__title{
+  padding-bottom: 40px;
+
+  font-size: 18px;
+  font: $secondary_font;
+  text-transform: uppercase;
+}
+
+.page-information__description{
+  text-transform: uppercase;
+}

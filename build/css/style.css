@@ -307,3 +307,59 @@ h1, h2, h3, h4, h5, p {
 .subscoreboard__information_size_small {
   padding-top: 23px;
   padding-bottom: 33px; }
+
+.second-title {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+  background: url("/img/intro_triangle_background.png"), url("/img/intro_background_mobile.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover; }
+
+.page-information {
+  padding-top: 45px;
+  padding-bottom: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5; }
+
+.page-information_offset_small {
+  padding-top: 40px;
+  padding-bottom: 40px; }
+
+.page-information__title {
+  padding-bottom: 40px;
+  font-size: 18px;
+  font: "PT_Sans_Bold", "Arial", sans-serif;
+  text-transform: uppercase; }
+
+.page-information__description {
+  text-transform: uppercase; }
+
+.photo-news {
+  padding: 23px 20px;
+  border-bottom: 1px solid #e5e5e5; }
+
+.photo-news__title {
+  padding-top: 22px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  font: "PT_Sans_Bold", "Arial", sans-serif; }
+
+.photo-news__author {
+  padding-bottom: 22px;
+  color: #333333; }
+
+.photo-news__like {
+  padding-left: 38px;
+  font-weight: bold; }
+  .photo-news__like:before {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    margin-top: -5px;
+    left: 20px;
+    background: url("/img/icons/like-icon.png") no-repeat center center; }

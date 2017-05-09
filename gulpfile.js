@@ -48,7 +48,7 @@ gulp.task('minjs', function() {
 });
 
 gulp.task('html', function() {
-  gulp.src('src/*html')
+  gulp.src('src/*.html')
     .pipe(gulp.dest('build'));
 });
 
@@ -73,7 +73,7 @@ gulp.task('symbols', function() {
   .pipe(gulp.dest('build/img'));
 })
 gulp.task('html', function() {
-  gulp.src('src/*html')
+  gulp.src('src/*.html')
     .pipe(gulp.dest('build'));
 });
 
