@@ -13,7 +13,29 @@
 }
 
 .info-input_flex_none{
+  position: relative;
   flex-wrap: wrap;
+
+  &:after{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    display: block;
+    width: 61px;
+    height: 61px;
+    top: 36px;
+    left: -60px;
+    margin-left: 100%;
+
+    background: #e6e6e6 url("../img/icons/icon_input.png") no-repeat 20px center;
+
+  }
+}
+
+.info-input_flex_none_mail{
+  &:after{
+    background-position: -35px;
+  }
 }
 
 .info-input__title_no-flex_wraper{
