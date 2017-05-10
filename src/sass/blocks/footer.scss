@@ -38,7 +38,7 @@
   font-size: 14px;
   margin-left: -40px;
 
-  &:after{
+  &::after{
     content: "";
     position: absolute;
     width: 28px;
@@ -46,6 +46,10 @@
     margin-top: -7px;
     margin-left: 8px;
 
-    background: url("/img/icons/icon_htm_academy.png") no-repeat;
+    background: url("../img/icons/icon_htm_academy.png") no-repeat;
   }
+}
+
+.footer__ps:hover::after{
+  
 }

@@ -81,7 +81,10 @@ textarea:-o-input-placeholder {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 21px; }
+  .btn:hover {
+    background-color: #669ec0; }
   .btn:active {
+    color: #6ca5c6;
     animation-name: epileptic_btn;
     animation-duration: 500ms;
     animation-iteration-count: infinite; }
@@ -191,6 +194,7 @@ textarea:-o-input-placeholder {
     padding-bottom: 42px; }
 
 .blurb__subtitle {
+  position: relative;
   padding-bottom: 25px;
   font-weight: 700;
   font-size: 21px;
@@ -201,14 +205,15 @@ textarea:-o-input-placeholder {
     position: absolute;
     width: 38px;
     height: 38px;
-    margin-top: -12px;
-    left: 15px;
+    top: -12px;
+    left: -50px;
     background: url("../img/icons/icon_blurb.png") no-repeat left bottom; }
 
 .blurb__subtitle_gift:before {
   background-position: -44px; }
 
 .blurb__subtitle_burger:before {
+  left: -52px;
   background-position: -84px; }
 
 .blurb__description {
@@ -287,14 +292,14 @@ textarea:-o-input-placeholder {
   text-transform: uppercase;
   font-size: 14px;
   margin-left: -40px; }
-  .footer__ps:after {
+  .footer__ps::after {
     content: "";
     position: absolute;
     width: 28px;
     height: 35px;
     margin-top: -7px;
     margin-left: 8px;
-    background: url("/img/icons/icon_htm_academy.png") no-repeat; }
+    background: url("../img/icons/icon_htm_academy.png") no-repeat; }
 
 .logo {
   display: flex;
@@ -500,6 +505,7 @@ textarea:-o-input-placeholder {
   color: #333333; }
 
 .photo-news__like {
+  position: relative;
   padding-left: 38px;
   font-weight: bold; }
   .photo-news__like:before {
@@ -507,8 +513,8 @@ textarea:-o-input-placeholder {
     position: absolute;
     width: 22px;
     height: 22px;
-    margin-top: -5px;
-    left: 20px;
+    top: -5px;
+    left: 3px;
     background: url("../img/icons/like-icon.png") no-repeat center center; }
 
 .info-input {

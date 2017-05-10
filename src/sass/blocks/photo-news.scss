@@ -19,6 +19,7 @@
 }
 
 .photo-news__like{
+  position: relative;
   padding-left: 38px;
 
   font-weight: bold;
@@ -28,8 +29,8 @@
     position: absolute;
     width: 22px;
     height: 22px;
-    margin-top: -5px;
-    left: 20px;
+    top: -5px;
+    left: 3px;
 
     background: url("../img/icons/like-icon.png") no-repeat center center;
   }

@@ -1,4 +1,5 @@
 .blurb{
+
   display: flex;
   flex-direction: column;
 
@@ -11,6 +12,7 @@
 }
 
 .blurb__subtitle{
+  position: relative;
   padding-bottom: 25px;
   font-weight: 700;
   font-size: 21px;
@@ -23,8 +25,8 @@
     position: absolute;
     width: 38px;
     height: 38px;
-    margin-top: -12px;
-    left: 15px;
+    top: -12px;
+    left: -50px;
 
 
     background: url("../img/icons/icon_blurb.png") no-repeat left bottom;
@@ -39,6 +41,7 @@
 
 .blurb__subtitle_burger{
   &:before{
+    left: -52px;
     background-position: -84px;
   }
 }
