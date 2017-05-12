@@ -12,6 +12,18 @@ $secondary_text_color: #ffffff;
 
 
 //------------стиль текста------------//
-$primary_font: "PT Sans", "Arial", sans-serif;
-$secondary_font: "PT_Sans_Bold", "Arial", sans-serif;
+$primary_font: "PT-Sans", "Arial", sans-serif;
+$secondary_font: "PT-Sans-Bold", "Arial", sans-serif;
+//-----------------------------------//
+
+//------переменные для адаптива-------//
+$mobile-width-only: 767px;
+
+$tablet-width: 768px;
+$tablet-max-width: 1199px;
+
+$desktop-width: 1200px;
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
 //-----------------------------------//

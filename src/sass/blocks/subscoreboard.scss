@@ -76,3 +76,14 @@
   padding-top: 23px;
   padding-bottom: 33px;
 }
+
+@media (min-width: $tablet-width) {
+  .subscoreboard{
+    max-width: 255px;
+    padding: 46px;
+    background: $secondary_background_color;
+  }
+  .subscoreboard__information{
+    padding-bottom: 0;
+  }
+}

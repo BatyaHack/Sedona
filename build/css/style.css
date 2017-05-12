@@ -14,7 +14,7 @@
   min-width: 320px;
   margin: 0 auto;
   box-sizing: border-box;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PT-Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -22,7 +22,7 @@
   color: #000000; }
 
 a {
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PT-Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
@@ -77,7 +77,7 @@ textarea:-o-input-placeholder {
   text-align: center;
   background-color: #81b3d2;
   color: #ffffff;
-  font-family: "PT_Sans_Bold", "Arial", sans-serif;
+  font-family: "PT-Sans-Bold", "Arial", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 21px; }
@@ -244,7 +244,7 @@ textarea:-o-input-placeholder {
   width: 280px;
   background-color: #81b3d2;
   color: #ffffff;
-  font-family: "PT_Sans_Bold", "Arial", sans-serif;
+  font-family: "PT-Sans-Bold", "Arial", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 21px; }
@@ -331,6 +331,22 @@ textarea:-o-input-placeholder {
   left: 50%;
   transform: translateX(-50%); }
 
+.logo__link {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "PT-Sans-Bold", "Arial", sans-serif;
+  font-weight: 700; }
+  .logo__link:hover:not(.logo__link_active) {
+    color: #a3c7de; }
+  .logo__link:active:not(.logo__link_active) {
+    color: #b2b2b2; }
+  .logo__link_active {
+    color: #766357; }
+    .logo__link_active:hover {
+      color: #604e43; }
+    .logo__link_active:active {
+      opacity: 0.3; }
+
 .main-title {
   padding: 0px;
   margin: 0px;
@@ -376,13 +392,13 @@ textarea:-o-input-placeholder {
 
 .scoreboard__title {
   padding-bottom: 40px;
-  font: "PT Sans", "Arial", sans-serif;
+  font: "PT-Sans", "Arial", sans-serif;
   text-transform: uppercase;
   font-size: 18px; }
 
 .scoreboard__information {
   color: #333333;
-  font: "PT Sans", "Arial", sans-serif;
+  font: "PT-Sans", "Arial", sans-serif;
   text-transform: uppercase;
   font-size: 14px; }
 
@@ -391,7 +407,7 @@ textarea:-o-input-placeholder {
   padding-left: 6%;
   padding-right: 6%;
   text-align: center;
-  font: "PT Sans", "Arial", sans-serif;
+  font: "PT-Sans", "Arial", sans-serif;
   background: #81b3d2 url("../img/scoreboard_background.png") no-repeat center top; }
 
 .subscoreboard_bg_none {
@@ -484,7 +500,7 @@ textarea:-o-input-placeholder {
 .page-information__title {
   padding-bottom: 40px;
   font-size: 18px;
-  font: "PT_Sans_Bold", "Arial", sans-serif;
+  font: "PT-Sans-Bold", "Arial", sans-serif;
   text-transform: uppercase; }
 
 .page-information__description {
@@ -498,7 +514,7 @@ textarea:-o-input-placeholder {
   padding-top: 22px;
   padding-bottom: 15px;
   text-transform: uppercase;
-  font: "PT_Sans_Bold", "Arial", sans-serif; }
+  font: "PT-Sans-Bold", "Arial", sans-serif; }
 
 .photo-news__author {
   padding-bottom: 22px;
@@ -548,3 +564,64 @@ textarea:-o-input-placeholder {
 .info-input__title_no-flex_wraper {
   padding-left: 20px;
   padding-bottom: 15px; }
+
+@media (min-width: 768px) {
+
+  .blurb {
+    max-width: 256px;
+    padding: 205px 47px 35px;
+    text-align: center; }
+
+  .blurb__subtitle:before {
+    top: -100px;
+    left: 60px; }
+
+  .logo {
+    justify-content: space-between;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 25px; }
+
+  .logo__link_wrap_rigth {
+    margin-right: 25px; }
+
+  .logo__link_wrap_left {
+    box-sizing: border-box;
+    margin-left: 160px; }
+
+  .burger {
+    display: none; }
+
+  .logo__img {
+    top: 0; }
+
+  .main-title__img {
+    width: 460px;
+    height: 350px; }
+
+  .menu {
+    display: none; }
+
+  .page__main-title {
+    padding-top: 78px;
+    padding-bottom: 94px; }
+
+  .page__sub {
+    display: flex; }
+
+  .page__blurb {
+    display: flex;
+    justify-content: space-around; }
+
+  .subscoreboard {
+    max-width: 255px;
+    padding: 46px;
+    background: #81b3d2; }
+
+  .subscoreboard__information {
+    padding-bottom: 0; } }
+
+@media (max-width: 767px) {
+
+  .logo__link {
+    display: none; } }

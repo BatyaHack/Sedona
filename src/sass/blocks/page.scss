@@ -2,3 +2,17 @@
   padding-top: 80px;
   padding-bottom: 80px;
 }
+
+@media (min-width: $tablet-width) {
+  .page__main-title{
+    padding-top: 78px;
+    padding-bottom: 94px;
+  }
+  .page__sub{
+    display: flex;
+  }
+  .page__blurb{
+    display: flex;
+    justify-content: space-around;
+  }
+}

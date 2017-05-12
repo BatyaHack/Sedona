@@ -38,3 +38,67 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
+.logo__link{
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: $secondary_font;
+  font-weight: 700;
+
+  &:hover:not(&_active){
+    color: #a3c7de;
+  }
+
+  &:active:not(&_active){
+    color: #b2b2b2;
+  }
+
+  &_active{
+    color: #766357;
+
+    &:hover{
+      color: #604e43;
+    }
+
+    &:active{
+      opacity: 0.3;
+    }
+  }
+}
+
+//==============смартфон============//
+@media (max-width: $mobile-width-only){
+  .logo__link{
+    display: none;
+  }
+}
+//=================================//
+
+
+//==============Планшет============//
+@media (min-width: $tablet-width) {
+  .logo{
+    justify-content: space-between;
+
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 25px;
+  }
+
+  .logo__link_wrap_rigth{
+    margin-right: 25px;
+  }
+
+  .logo__link_wrap_left{
+    box-sizing: border-box;
+    margin-left: 160px;
+  }
+
+  .burger{
+    display: none;
+  }
+  .logo__img{
+    top: 0;
+  }
+}
+//=================================//
