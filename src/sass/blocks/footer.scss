@@ -51,5 +51,25 @@
 }
 
 .footer__ps:hover::after{
-  
+
+}
+
+@media (min-width: $tablet-width){
+  .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 35px 100px 35px 60px;
+  }
+  .footer__tag, .footer__social, .footer__ps{
+    padding: 0;
+  }
+  .footer__ps{
+    position: relative;
+    &:after{
+      top: 0;
+      left: 100%;
+    }
+  }
 }

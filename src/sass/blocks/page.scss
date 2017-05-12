@@ -8,11 +8,9 @@
     padding-top: 78px;
     padding-bottom: 94px;
   }
-  .page__sub{
+  
+  .page__blurb, .page__sub{
     display: flex;
-  }
-  .page__blurb{
-    display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
