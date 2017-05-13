@@ -28,3 +28,20 @@
 .page-information__description{
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .page-information{
+    padding-top: 65px;
+    padding-bottom: 77px;
+  }
+
+  .page-information__title{
+    font-size: 30px;
+  }
+
+  .page-information_size-offest_small{
+    border: none;
+    padding-left: 21%;
+    padding-right: 21%;
+  }
+}

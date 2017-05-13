@@ -1,7 +1,22 @@
 //стили функции
-
-@mixin epileptic{
+@mixin epileptic {
   animation-name: epileptic_btn;
   animation-duration: 500ms;
   animation-iteration-count: infinite;
+}
+@mixin dicoration {
+  &:after,
+  &:before {
+    content: "";
+    position: absolute;
+    top: 80px;
+    display: block;
+    width: 19%;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+
+  &:after {
+    left: 81%;
+  }
 }

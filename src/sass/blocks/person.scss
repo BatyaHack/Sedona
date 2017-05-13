@@ -21,3 +21,9 @@
 .person__info-input{
   padding-bottom: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .person{
+    border: none; 
+  }
+}

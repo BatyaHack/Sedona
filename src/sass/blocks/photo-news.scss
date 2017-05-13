@@ -35,3 +35,27 @@
     background: url("../img/icons/like-icon.png") no-repeat center center;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .photo-news__information{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: -5px; //костыль!
+    padding: 20px;
+
+    background-color: #f2f2f2;
+  }
+
+  .photo-news{
+    padding: 0 8%;
+    border: none;
+  }
+
+  .photo-news__title,
+  .photo-news__author,{
+    padding: 0;
+    font-size: 14px;
+  }
+}

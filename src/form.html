@@ -35,89 +35,85 @@
     <p class="page-information__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
   </div>
 
-<form action="#">
-  <div class="person">
-
-    <h3 class="person__title">Представьтесь, пожалуйста:</h3>
-
-    <div class="info-input  person__info-input">
-      <label class="info-input__title" for="info-input__input">Имя:</label>
-      <input class="input  info-input__input" type="text" name="name" placeholder="Петр">
+  <form action="#">
+    <div class="person  form__user-info">
+      <h3 class="person__title">Представьтесь</h3>
+      <div class="info-input  person__info-input">
+        <label class="info-input__title" for="info-input__input">Имя:</label>
+        <input class="input  info-input__input" type="text" name="name" placeholder="Петр">
+      </div>
+      <div class="info-input  person__info-input">
+        <label class="info-input__title" for="info-input__input">Фамилия:</label>
+        <input class="input  info-input__input" type="text" name="second_name" placeholder="Иванов">
+      </div>
+      <div class="info-input">
+        <label class="info-input__title" for="info-input__input">Отчество:</label>
+        <input class="input  info-input__input" type="text" name="patronymic" placeholder="Александрович">
+      </div>
     </div>
 
-    <div class="info-input  person__info-input">
-      <label class="info-input__title" for="info-input__input">Фамилия:</label>
-      <input class="input  info-input__input" type="text" name="second_name" placeholder="Иванов">
+    <div class="person  form__contacts">
+      <h3 class="person__title">Контактная информация:</h3>
+      <div class="info-input  info-input_flex_none  person__info-input">
+        <label class="info-input__title  info-input__title_no-flex_wraper" for="info-input__input">Контактный телефон:</label>
+        <input class="input  input_icon_phone  info-input__input" type="tel" name="phome" placeholder="Введите телефон">
+      </div>
+      <div class="info-input  info-input_flex_none info-input_flex_none_mail">
+        <!--Вот это я говнецо сделал пипец....-->
+        <label class="info-input__title  info-input__title_no-flex_wraper" for="info-input__input">Электронная почта:</label>
+        <input class="input  input_icon_mail  info-input__input" type="email" name="email" placeholder="Введите e-mail">
+      </div>
     </div>
 
-    <div class="info-input">
-      <label class="info-input__title" for="info-input__input">Отчество:</label>
-      <input class="input  info-input__input" type="text" name="patronymic" placeholder="Александрович">
-    </div>
-
-  </div>
-
-  <div class="person">
-    <h3 class="person__title">Контактная информация:</h3>
-    <div class="info-input  info-input_flex_none  person__info-input">
-      <label class="info-input__title  info-input__title_no-flex_wraper" for="info-input__input">Контактный телефон:</label>
-      <input class="input  input_icon_phone  info-input__input" type="tel" name="phome" placeholder="Введите телефон">
-    </div>
-    <div class="info-input  info-input_flex_none info-input_flex_none_mail"> <!--Вот это я говнецо сделал пипец....-->
-      <label class="info-input__title  info-input__title_no-flex_wraper" for="info-input__input">Электронная почта:</label>
-      <input class="input  input_icon_mail  info-input__input" type="email" name="email" placeholder="Введите e-mail">
-    </div>
-  </div>
-
-  <div class="person">
-    <h3 class="person__title">Ваше общее впечатление:</h3>
-    <div class="valuation-wraper">
-      <label class="valuation">
+    <div class="person  form__radio-button">
+      <h3 class="person__title">Ваше общее впечатление:</h3>
+      <div class="valuation-wraper">
+        <label class="valuation">
         <input class="valuation__radio  visually-hidden" type="radio" name="valuation" value="1">
         <span class="valuation__title">Скорее положительное</span>
       </label>
-      <label class="valuation">
+        <label class="valuation">
         <input class="valuation__radio  visually-hidden" type="radio" name="valuation" value="2">
         <span class="valuation__title">Скорее отрицательное</span>
       </label>
-      <label class="valuation">
+        <label class="valuation">
         <input class="valuation__radio  visually-hidden" type="radio" name="valuation" value="3">
         <span class="valuation__title">Затрудняюсь ответить</span>
       </label>
+      </div>
     </div>
-  </div>
 
-  <div class="person">
-    <h3 class="person__title">посещенные достопримечательности:</h3>
-    <div class="valuation-wraper">
-      <label class="valuation">
+      <div class="person  form__visit">
+      <h3 class="person__title">посещенные достопримечательности:</h3>
+      <div class="valuation-wraper">
+        <label class="valuation">
         <input class="valuation__radio  visually-hidden" type="checkbox" name="brich_hell" value="1">
         <span class="valuation__title_checkbox">Мост Дьявола</span>
       </label>
-      <label class="valuation">
+        <label class="valuation">
         <input class="valuation__radio  visually-hidden" type="checkbox" name="park" value="2">
         <span class="valuation__title_checkbox">Слайд-парк</span>
       </label>
-      <label class="valuation">
+        <label class="valuation">
         <input class="valuation__radio  visually-hidden" type="checkbox" name="mountain" value="3">
         <span class="valuation__title_checkbox">Гора-Колокол</span>
       </label>
-      <label class="valuation">
+        <label class="valuation">
         <input class="valuation__radio  visually-hidden" type="checkbox" name="red_mountain" value="3">
         <span class="valuation__title_checkbox">Красные скалы</span>
       </label>
+      </div>
     </div>
-  </div>
 
-  <div class="person person_offset">
-    <h3 class="person__title">Опишите свои эмоции:</h3>
-    <div class="feed-back  person__feed-back">
-      <textarea class="input feed-back-textarea" name="feed_back" rows="8"></textarea>
+    <div class="person person_offset form__feedback">
+      <h3 class="person__title">Опишите свои эмоции:</h3>
+      <div class="feed-back  person__feed-back">
+        <textarea class="input feed-back-textarea" name="feed_back" rows="8"></textarea>
+      </div>
     </div>
-  </div>
+  </form>
 
   <a class="btn" href="#">Отправить отзыв</a>
-</form>
 
   <div class="footer">
     <h3 class="footer__tag">#visitsedona</h3>

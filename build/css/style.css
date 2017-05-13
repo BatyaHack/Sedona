@@ -567,6 +567,16 @@ textarea:-o-input-placeholder {
 
 @media (min-width: 768px) {
 
+  .valuation {
+    padding-top: 20px;
+    padding-bottom: 40px; }
+
+  .valuation__title {
+    padding-left: 70px; }
+
+  .person {
+    border: none; }
+
   .blurb {
     max-width: 256px;
     padding: 165px 6% 65px;
@@ -630,6 +640,15 @@ textarea:-o-input-placeholder {
     display: flex;
     justify-content: space-between; }
 
+  .page__news {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 8%; }
+
+  .page__news .photo-news {
+    padding: 0;
+    width: 50%; }
+
   .subscoreboard {
     width: 255px;
     padding-top: 46px;
@@ -655,7 +674,108 @@ textarea:-o-input-placeholder {
     background-color: #eeeeee; }
 
   .subscoreboard_bg_border {
-    border: none; } }
+    border: none; }
+
+  .page-information {
+    padding-top: 65px;
+    padding-bottom: 77px; }
+
+  .page-information__title {
+    font-size: 30px; }
+
+  .page-information_size-offest_small {
+    border: none;
+    padding-left: 21%;
+    padding-right: 21%; }
+
+  .photo-news__information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -5px;
+    padding: 20px;
+    background-color: #f2f2f2; }
+
+  .photo-news {
+    padding: 0 8%;
+    border: none; }
+
+  .photo-news__title,
+  .photo-news__author {
+    padding: 0;
+    font-size: 14px; }
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 8%; }
+
+  .form__contacts,
+  .form__feedback,
+  .form__radio-button,
+  .form__user-info,
+  .form__visit {
+    padding: 0; }
+
+  .form__radio-button {
+    order: 1;
+    width: 50%; }
+
+  .form__radio-button .person__title {
+    text-align: left; }
+
+  .form__user-info {
+    order: 2;
+    box-sizing: border-box;
+    width: 50%;
+    padding-left: 9%;
+    border-left: 1px solid #dbdbdb; }
+
+  .form__user-info .person__title {
+    text-align: left; }
+
+  .form__contacts {
+    position: relative;
+    order: 3;
+    width: 100%;
+    padding-top: 70px; }
+
+  .form__contacts .person__title:after, .form__contacts .person__title:before {
+    content: "";
+    position: absolute;
+    top: 80px;
+    display: block;
+    width: 19%;
+    height: 1px;
+    background-color: #dbdbdb; }
+
+  .form__contacts .person__title:after {
+    left: 81%; }
+
+  .form__visit {
+    order: 4;
+    width: 100%;
+    padding-top: 55px; }
+
+  .form__visit .person__title {
+    margin-right: 180px;
+    margin-left: 180px;
+    text-align: center; }
+
+  .form__visit .valuation-wraper {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 15%; }
+
+  .form__visit .valuation:nth-child(1) {
+    margin-right: 9%; }
+
+  .form__visit .valuation:nth-child(3), .form__visit .valuation:nth-child(2), .form__visit .valuation:nth-child(4) {
+    margin-right: 10%; }
+
+  .form__feedback {
+    order: 5;
+    width: 100%; } }
 
 @media (max-width: 767px) {
 

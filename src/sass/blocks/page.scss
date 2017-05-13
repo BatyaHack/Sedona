@@ -8,9 +8,22 @@
     padding-top: 78px;
     padding-bottom: 94px;
   }
-  
+
   .page__blurb, .page__sub{
     display: flex;
     justify-content: space-between;
   }
+
+  //использую вложеность, так как не вижу смысла писать доп модификатор
+  //что бы убрать падинги и уменьшит ширену
+  .page__news{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 8%;
+    .photo-news{
+      padding: 0;
+      width: 50%
+    }
+  }
+
 }

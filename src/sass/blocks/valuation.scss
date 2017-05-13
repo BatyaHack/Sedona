@@ -61,3 +61,14 @@
 .valuation__radio:checked ~ .valuation__title::after {
   display: block;
 }
+
+@media (min-width: $tablet-width) {
+  .valuation{
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+
+  .valuation__title{
+    padding-left: 70px;
+  }
+}
