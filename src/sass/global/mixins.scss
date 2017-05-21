@@ -4,15 +4,18 @@
   animation-duration: 500ms;
   animation-iteration-count: infinite;
 }
-@mixin dicoration {
+@mixin dicoration($link) {
   &:after,
   &:before {
     content: "";
     position: absolute;
-    top: 80px;
+    top: $link;
+    left: 0;
+
     display: block;
     width: 19%;
     height: 1px;
+
     background-color: #dbdbdb;
   }
 

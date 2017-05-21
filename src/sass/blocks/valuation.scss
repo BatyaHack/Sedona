@@ -7,8 +7,8 @@
   padding: 25px 0;
 }
 
-.valuation__title_checkbox,
-.valuation__title {
+.valuation__title,
+.valuation__title_checkbox {
   position: relative;
   padding-left: 80px;
   font-size: 18px;
@@ -24,7 +24,8 @@
     background-color: #f2f2f2;
     border-radius: 50%;
   }
-  &::after{
+
+  &::after {
     content: "";
     display: none;
     position: absolute;
@@ -37,38 +38,53 @@
   }
 }
 
-.valuation__title_checkbox{
-  &:before{
+.valuation__title_checkbox {
+  &:before {
     border-radius: 10px;
   }
-  &:after{
+
+  &:after {
     background: url("../img/icons/tick.png") no-repeat center center;
   }
 }
 
-.valuation__title_checkbox:hover::before,
-.valuation__title:hover::before {
+.valuation__title:hover::before,
+.valuation__title_checkbox:hover::before {
   background-color: #e5e5e5;
 }
 
-
-.valuation__title_checkbox:active::before,
-.valuation__title:active::before {
+.valuation__title:active::before,
+.valuation__title_checkbox:active::before {
   background-color: #d5d5d5;
 }
 
-.valuation__radio:checked ~ .valuation__title_checkbox::after,
-.valuation__radio:checked ~ .valuation__title::after {
+.valuation__radio:checked ~ .valuation__title::after,
+.valuation__radio:checked ~ .valuation__title_checkbox::after {
   display: block;
 }
-
 @media (min-width: $tablet-width) {
-  .valuation{
+  .valuation {
     padding-top: 20px;
     padding-bottom: 40px;
+
+    &:nth-child(1) {
+      order: 1;
+    }
+
+    &:nth-child(2) {
+      order: 3;
+    }
+
+    &:nth-child(3) {
+      order: 2;    
+    }
+
+    &:nth-child(4) {
+      order: 4;
+    }
   }
 
-  .valuation__title{
+  .valuation__title {
     padding-left: 70px;
   }
 }

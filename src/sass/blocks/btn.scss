@@ -22,3 +22,19 @@
     @include epileptic;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .btn_left_side{
+    float: left;
+    //Позеционирование на блоке. Не верно!
+    margin-bottom: 65px;
+    &:after{
+      content: "* — обязательные поля";
+      position: absolute;
+      right: 8%;
+
+      font-size: 14px;
+      color: #333333;
+    }
+  }
+}

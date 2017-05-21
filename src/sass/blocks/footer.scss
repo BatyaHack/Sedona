@@ -37,17 +37,6 @@
   text-transform: uppercase;
   font-size: 14px;
   margin-left: -40px;
-
-  &::after{
-    content: "";
-    position: absolute;
-    width: 28px;
-    height: 35px;
-    margin-top: -7px;
-    margin-left: 8px;
-
-    background: url("../img/icons/icon_htm_academy.png") no-repeat;
-  }
 }
 
 .footer__ps:hover::after{
@@ -59,17 +48,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    padding: 35px 100px 35px 60px;
+    clear: both;
+    padding: 35px 8% 35px 8%;
   }
   .footer__tag, .footer__social, .footer__ps{
     padding: 0;
-  }
-  .footer__ps{
-    position: relative;
-    &:after{
-      top: 0;
-      left: 100%;
-    }
   }
 }
